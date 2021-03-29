@@ -1,0 +1,200 @@
+header {
+    background-color: rgb(240, 231, 231);
+    width: 100%;
+    height: 100px;
+}
+
+.container-fluid {
+    padding: 15px;
+    text-align: center;
+    margin: 5px;
+}
+
+#categories {
+    text-align: center;
+    padding-top: 20px;
+    float: right;
+}
+
+#categories ul {
+    list-style: none;
+    display: inline-block;
+}
+
+#categories ul li {
+    display: inline-block;
+}
+
+#categories ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+}
+
+#categories ul li a:hover {
+    cursor: pointer;
+    color: burlywood;
+}
+
+.categories-list {
+    display: inline-block;
+    position: relative;
+}
+
+.categories-tt {
+    display: none;
+    position: absolute;
+    text-align: left;
+    width: 205px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    z-index: 1;
+}
+
+.categories-tt a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 
+.categories-tt a:hover {
+    background-color :floralwhite;
+} */
+
+.categories-list:hover .categories-tt {
+    display: block;
+}
+
+
+.serach {
+    float: right;
+    text-decoration: none;
+    /* padding-top: 20px; */
+}
+
+.serach ul {
+    list-style: none;
+}
+
+.logo {
+
+    float: left;
+}
+
+
+.fixedss {
+    width: 100%;
+    height: 35px;
+    padding-bottom: 25px;
+    background-color: rgb(240, 231, 231);
+}
+
+
+/* Search Bar */
+
+  
+.search-container {
+	position: relative;
+	display: inline-block;
+	margin: 4px 2px;
+	height: 50px;
+	width: 50px;
+	vertical-align: bottom;
+    border: 1px solid rgb(240, 231, 231);
+}
+
+
+.mglass {
+	display: inline-block;
+	pointer-events: none;
+    font-size: 30px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+}
+
+.searchbutton {
+	position: relative;
+	font-size: 52px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+    display: none;
+}
+
+.search:focus + .searchbutton {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	background-color: white;
+	color: rgb(59, 58, 58);
+}
+
+
+
+.search {
+	position: absolute;
+	left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+	border: none;
+    background-color: white;
+	outline: none;
+    padding: 0;
+	width: 0;
+	height: 100%;
+	z-index: 10;
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+}
+
+.search:focus {
+	width: 503px; /* Bar width+1px */
+	padding: 0 16px 0 0;
+    height: 50px;
+}
+
+.expandright {
+	left: auto;
+	right: 49px; 
+}
+
+.expandright:focus {
+	padding: 0 0 0 16px;
+}
+
+.button {
+	display: inline-block;
+	/* margin: 4px 2px; */
+	background-color: rgb(240, 231, 231);
+	font-size: 14px;
+	/* padding-left: 32px;
+	padding-right: 32px; */
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: rgb(59, 58, 58);
+	text-decoration: none;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.button:hover {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	background-color: rgb(59, 58, 58);
+	color: rgb(240, 231, 231);
+}
+
